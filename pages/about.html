@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thibault Daraignes Website</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-navbar">
+        <div class="logo">Thibault Daraignes</div>
+        <div>
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="mailto:tdaraignes@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile-navbar">
+        <div class="logo">Thibault Daraignes</div>
+        <div class="hamburger" id="hamburger">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="mailto:tdaraignes@gmail.com" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="about" name="about">
+        <div class="cv-container">
+            <h1 class="title-about">About me</h1>
+            <p class="p-about">Composer for both instrumental and electroacoustic music, my
+                intellectual interests lie at the crossroads of philosophy, music
+                composition, analysis and computer music. I’m interested in formal
+                approaches to music analysis (set-theory, transformational theory and
+                formal methods) and their signifiance for the resolution of problems of
+                composition, musical perception and computational representations. I’m
+                also very engaged in the philosophical evaluation of analysis methods and
+                composition techniques.</p>
+        </div>
+    </section>
+    <hr>
+    <section id="eduction-section" name="education">
+        <div class="education-container">
+            <h1 class="title-education">Education</h1>
+            <ul class="education-list">
+                <li>Master’s Degree in Musical Creation and Sound
+                    Arts, INA-GRM and
+                    Gustave Eiffel University, 2025</li>
+                <li>D.E.M in Electroacoustic Composition, CRR Paris, 2025</li>
+                <li>Master’s Degree in Philosophy, Sorbonne University, 2024</li>
+                <li>Master’s Degree in German Studies, Sorbonne University, 2024</li>
+                <li>Bachelor in Philosophy, Sorbonne University, 2023</li>
+                <li>Bachelor in Sociology, Sorbonne University, 2023</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section id="skills-section" name="skills">
+        <div class="skills-container">
+            <h1 class="title-skills">Skills</h1>
+            <h2 class="skills-h2-title">Philosophy and sociology</h2>
+            <p class="skills-p">Advanced knowledges in history of philosophy, phenomenology
+                and analytic philosophy.
+                Quantitative sociology : agent-based modelling for social sciences,
+                Statistics and probabilities, network analysis, cultural sociology.</p>
+
+            <h2 class="skills-h2-title">Music (theory and practice)</h2>
+            <p class="skills-p">Classical and jazz piano, tonal harmony, counterpoint, analysis.
+                Theories and techniques of contemporary music, composition for
+                instrumental and electroacoustic music, sound design, jazz arrangement.</p>
+
+            <h2 class="skills-h2-title">Computer music</h2>
+            <p class="skills-p">Digital Signal Processing, Digital Sound Synthesis, algorithms and
+                computer music programming (C, Csound, SuperCollider, Max/MSP).
+                </p>
+                <p class="skills-p">DAW : Reaper, Pro Tools, Ableton Live.</p>
+        </div>
+    </section>
+    <hr>
+    <section id="experience-section" name="experience">
+        <div class="skills-container">
+            <h1 class="title-skills">Experience</h1>
+            <h2 class="skills-h2-title">Jazz piano</h2>
+            <p class="skills-p">Standard jazz, free jazz and experimental jazz (with musicians of Compagnie
+                Lubat and conservatory of Bordeaux).
+                Jazz fusion in Tom Ibarra Group.
+                Concerts in Bordeaux, Paris, Angoulême, Toulouse.</p>
+            <h2 class="skills-h2-title">Classical piano</h2>
+            <p class="skills-p">Study of classical repertory, more specifically music of 19th century.
+                Piano teacher in Bordeaux and currently in Paris.
+                Concerts in Bordeaux with tenor singer and in violin-piano duo (conservatory of
+                Bordeaux).</p>
+            <h2 class="skills-h2-title">Composition</h2>
+            <p class="skills-p">Jazz compositions for a jazz quartet of the American School of Modern Music,
+                and for experimental jazz with a band of the conservatory of Bordeaux.
+                </p>
+                <p class="skills-p">
+                Piano compositions in the style of early 20th century.
+                Compositions for piano, trumpet, saxophone and doublebass in the style of Béla
+                Bartók.
+            </p>
+            <p class="skills-p">
+                Acousmatic compositions selected by the Groupe de Recherches Musicales for
+                the master’s degree of musical creation and sound arts.
+            </p>
+            <p class="skills-p">
+                Currently working on electroaoustic compositions for the Groupe de
+                Recherches Musicales and the conservatory of Paris in the style of Musique
+                Concrète and electronic serial music.
+            </p>
+                </p>
+                <p class="skills-p">
+                Currently working on electroacoustic composition and sound design for an
+                experimental animation film produced by Loqidor Production.</p>
+            
+        </div>
+    </section>
+    <div class="back-to-nav">
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-nav-btn">
+        Back to Top
+    </button>
+</div>
+    <script src="../script.js"></script>
+</body>
+</html>

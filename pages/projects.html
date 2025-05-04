@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thibault Daraignes Website</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-navbar">
+        <div class="logo">Thibault Daraignes</div>
+        <div>
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="mailto:tdaraignes@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile-navbar">
+        <div class="logo">Thibault Daraignes</div>
+        <div class="hamburger" id="hamburger">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="mailto:tdaraignes@gmail.com" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="audio-container">
+    <h1>Electroacoustic and Electronic Music</h1>
+    <h2>Monologue Embrouillé</h2>
+    <audio controls src="../assets/mono_emb.wav"></audio>
+    <h2 class="h2-audio">Croissance Machine</h2>
+    <audio controls src="../assets/croissance_machine.wav"></audio>
+
+</div>
+    <div class="audio-container">
+        <hr>
+        <h1>Instrumental music</h1>
+        <h3>Variations pour piano et clarinette (sheet score)</h3>
+        <button class="back-to-nav-btn" type="submit" onclick="window.open('../assets/sheet.pdf')">Download sheet</button>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thibault Daraignes Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-navbar">
+        <div class="logo">Thibault Daraignes</div>
+        <div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="mailto:tdaraignes@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile-navbar">
+        <div class="logo">Thibault Daraignes</div>
+        <div class="hamburger" id="hamburger">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="pages/about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="pages/projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="mailto:tdaraignes@gmail.com" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="image-container">
+    <img src="assets/band.jpg" alt="Thibault Daraignes" class="profile-image"/>
+    </div>
+    <section id="about", name="about">
+    <div class="cv-container">
+        <h1 class="title-about">About me</h1>
+        <p class="p-about">Composer for both instrumental and electroacoustic music, my
+            intellectual interests lie at the crossroads of philosophy, music
+            composition, analysis and computer music. I’m interested in formal
+            approaches to music analysis (set-theory, transformational theory and
+            formal methods) and their signifiance for the resolution of problems of
+            composition, musical perception and computational representations. I’m
+            also very engaged in the philosophical evaluation of analysis methods and
+            composition techniques.</p>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
